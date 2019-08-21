@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%=title%></title>
+        <link rel='stylesheet' href="stylesheets/style.css"/>
+    </head>
+    <body>
+        <%include header%>
+        <h1><%=title%></h1>
+        <% for (i in fruits) { %>
+            <p>Welcome to <%= i %></p>
+        <%}%>
+        <% if (title === 'ejs')  { %>
+            <p>ejs 공부합시다. </p>
+        <% } else {%>
+            <p>pug 공부합시다.</p>
+        <% } %>
+        <%include footer%>
+    </body>
+</html>
