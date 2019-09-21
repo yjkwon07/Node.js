@@ -2,7 +2,7 @@
  
 남들이 만든 미들웨어를 쓸 수 있고 express내에서 내장된 미들웨어들을 쓸 수 있다.
 
-## looger('dev')
+## morgan('dev')
     요청을 무었을 했는지, 응답을 무었을 했는지 
 
 ## body-parser => express 내장이 되었음
@@ -17,7 +17,7 @@
     원래는 next를 안 한다.
     하지만, 파일을(css, html....) 못 찾으면 next를  한다.
     그래서 최대한 위로 올린다 
-    logger 다음으로 두는 편이다.
+    morgan 다음으로 두는 편이다.
 
 ## cookie-parser
     쿠키를 활성화
