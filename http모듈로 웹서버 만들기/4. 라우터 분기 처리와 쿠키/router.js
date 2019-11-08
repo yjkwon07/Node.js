@@ -15,6 +15,7 @@ const parseCookies = (cookie = '') =>
 
 // req.url : 어떤 주소로 사용자가 접속했는지 알 수 있다.
 const server = http.createServer( (req, res) => {
+    console.log(req.headers.cookie)
     console.log('parseCookies',parseCookies(req.headers.cookie));
     const cookies = parseCookies(req.headers.cookie); // 쿠키 값을 받아온것을 객체화로 사용 가능하다.
     if(req.url.startsWith('/login')) {
