@@ -5,17 +5,17 @@ GET(메서드) /users(자원)
 
 DELETE(메서드) /users/5(자원)
 ```
-GET www.naver.co/users (가져오다)
+    GET www.naver.co/users (가져오다)
 
-POST www.naver.com/users (등록)
+    POST www.naver.com/users (등록)
 ```
 
 ```
-PUT  www.naver.com/users/1 (전체 수정, 통째로 대체)
+    PUT  www.naver.com/users/1 (전체 수정, 통째로 대체)
 
-PATCH www.naver.com/users/2 (부분 수정)
+    PATCH www.naver.com/users/2 (부분 수정)
 
-DELETE www.naver.com/users/5 (삭제)
+    DELETE www.naver.com/users/5 (삭제)
 ```
 
 REST API의 규칙으로 자원은 명사형이어야 한다.... 

@@ -26,12 +26,10 @@ __개발을 원할하게 만들어주는 패키지__
 
 다른 사람이 라이브러리를 받아갈 때 쓸데없는 devDependencies까지 받아가는 것을 막기 위함입니다.(용량 차지)
 
-
 ### 동시에 설치도 가능
 ```
     npm install morgan cookie-parser express-session
 ```
-
 
 ### 단축키
 ```
@@ -55,7 +53,7 @@ __npm 업데이트 할 때도 사용한다.__
 ```
 
 ## 2. SemVer 버전 이해하기
-engine은 이 패키지가 사용할 node와 npm 버전을 적는 곳이다.
+**`engine`** 은 이 패키지가 사용할 node와 npm 버전을 적는 곳이다.
 
 모두 3자리
 

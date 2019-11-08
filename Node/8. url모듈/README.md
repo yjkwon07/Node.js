@@ -1,8 +1,8 @@
 # url 모듈
 ## url.URL
-기존 방식의 주소 체계 WHATWG 방식(url.URL)은 search 처리가 편리하다.
+기존 방식의 주소 체계 **WHATWG 방식**(url.URL)은 **search 처리가 편리하다.**
 
-파라미터 찾기가 좋다. 
+**파라미터 찾기가 좋다.**
 ```javascript
     const url = require('url');
 
@@ -39,9 +39,9 @@
 ```
 
 ## url.parse
-기존 방식(url.parse)은 호스트(www.inflearn.com)가 없을 때도 쓸 수 있다.
+기존 방식(url.parse)은 **호스트(www.inflearn.com)가 없을 때도 쓸 수 있다.**
 
-주소가 /hello?page=10 일 때 __도메인 주소가 없을 때 사용__
+주소가 /hello?page=10 일 때 **도메인 주소가 없을 때 사용**
 ```javascript
     const parsedUrl = url.parse('https://www.inflearn.com/course/?page=3&limit=10&category=nodejs&category=javascript');
     console.log('url.parse(): ', parsedUrl); 
@@ -98,34 +98,34 @@
 ```
 
 ## append, set, delete, toString
-`append`는 값 추가(기존 값 보존)
+**`append`** 는 값 추가(기존 값 보존)
 
-`set`은 기존 값 초기화 후 수정 (es3 , es5값이 사라짐)
+**`set`** 은 기존 값 초기화 후 수정 (es3 , es5값이 사라짐)
 
 ```javascript
-_myURL.searchParams.append('filter', 'es3'); 
-_myURL.searchParams.append('filter', 'es5');
-console.log(_myURL.searchParams.getAll('filter'));
-console.log('searchParams.toString():' , _myURL.searchParams.toString());
+    _myURL.searchParams.append('filter', 'es3'); 
+    _myURL.searchParams.append('filter', 'es5');
+    console.log(_myURL.searchParams.getAll('filter'));
+    console.log('searchParams.toString():' , _myURL.searchParams.toString());
 
-_myURL.searchParams.set('filter', 'es6');
-console.log(_myURL.searchParams.getAll('filter'));
-console.log('searchParams.toString():' , _myURL.searchParams.toString());
+    _myURL.searchParams.set('filter', 'es6');
+    console.log(_myURL.searchParams.getAll('filter'));
+    console.log('searchParams.toString():' , _myURL.searchParams.toString());
 
-_myURL.searchParams.delete('filter');
-console.log(myURL.searchParams.getAll('filter'));
+    _myURL.searchParams.delete('filter');
+    console.log(myURL.searchParams.getAll('filter'));
 
-console.log('searchParams.toString():' , _myURL.searchParams.toString());
-_myURL.search = _myURL.searchParams.toString();
+    console.log('searchParams.toString():' , _myURL.searchParams.toString());
+    _myURL.search = _myURL.searchParams.toString();
 ```
 결과
 ```
-[ 'es3', 'es5' ]
-searchParams.toString(): page=3&limit=10&category=nodejs&category=javascript&filter=es3&filter=es5
+    [ 'es3', 'es5' ]
+    searchParams.toString(): page=3&limit=10&category=nodejs&category=javascript&filter=es3&filter=es5
 
-[ 'es6' ]
-searchParams.toString(): page=3&limit=10&category=nodejs&category=javascript&filter=es6
+    [ 'es6' ]
+    searchParams.toString(): page=3&limit=10&category=nodejs&category=javascript&filter=es6
 
-[]
-searchParams.toString(): page=3&limit=10&category=nodejs&category=javascript
+    []
+    searchParams.toString(): page=3&limit=10&category=nodejs&category=javascript
 ```

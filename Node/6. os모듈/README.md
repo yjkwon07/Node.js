@@ -1,6 +1,7 @@
 # os 모듈
-## built-in-funciton
+## built-in-funciton(내장 모듈)
 __os는 운영체제와 관련된 모듈이다.__
+
 __데스크탑 프로그램 만들 때 사용__
 ```javascript
     const os = require('os');
@@ -16,14 +17,13 @@ __데스크탑 프로그램 만들 때 사용__
     console.log(os.freemem()); // 남은 용량
     console.log(os.totalmem()); // 전체 용량
 ```
-```javascript
-    console.log(os.cpus());
-```
 
-__많이사용 하긴함__
+```javascript
+    console.log(os.cpus()); // cpu 모든 정보 
+```
 
 cpu의 코어를 파악하고 놀고있는 프로세스들을 
 
 `for문으로 이용하여 multi-process를 이용하여` 
 
-여러개의 노드를 실행시켜 `멀티스레드를 극복한다.`
+여러개의 노드를 실행시켜 **`멀티스레드를 극복한다.`**

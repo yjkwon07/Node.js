@@ -2,18 +2,18 @@
 
 ## Front 
 ```
-restFront.js
-restFront.css
-resetFront.html
+    restFront.js
+    restFront.css
+    resetFront.html
 ```
 
 ## Back
 ```
-restServer.js
-delete.js
-get.js
-post.js
-put.js
+    restServer.js
+    delete.js
+    get.js
+    post.js
+    put.js
 ```
 ## 1. front 과정
 form 제출 시 XMLHttpRequest()의 `ajax 통신` 완료 후 페이지 렌더링을 하는 (getUser())역할을 수행한다.

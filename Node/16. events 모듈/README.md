@@ -24,7 +24,7 @@ __이벤트리스너는 여러 개를 달 수도 있다.__
         console.log('제발 좀 가세요');
     });
     myEvent.once('특별이벤트', () => {
-        console.log('힌 반만 실행됩니다.');
+        console.log('한 반만 실행됩니다.');
     });
     
     myEvent.emit('방문');

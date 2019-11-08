@@ -4,7 +4,8 @@
 
 /favicon.ico => title icon
 
-[참고(decodeURIComponent)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent)
+- [참고(decodeURIComponent)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent)
+- [참고(reduce)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 
 ```javascript
     const http = require('http');

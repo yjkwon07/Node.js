@@ -17,7 +17,7 @@ data , end , error , 버퍼(청크)들이 들어올 때마다 data 이벤트가 
 ### readStream
 ```javascript
     const fs = require('fs');
-    const readStream = fs.createReadStream('./test.html', {highWaterMark : 16}); // 몇 바이트 씩 ? 16bytes
+    const readStream = fs.createReadStream('./test.html', {highWaterMark : 16}); /// highWaterMark: 몇 바이트 씩 ? 16bytes
     const data = [];
 
     readStream.on('data', (chunk) => {
@@ -55,9 +55,11 @@ data , end , error , 버퍼(청크)들이 들어올 때마다 data 이벤트가 
     });
 ```
 
-##파일 압축하기
+## 파일 압축하기
 
-파일을 pipe를 계속해서 연결하여 압축 할 수 있다. 
+스트림은 버퍼의 흐름이기 때문에 여러 개의 스트림을 이어 버퍼가 흘러가게 할 수 있다.
+
+파일을 **`pipe를`** 계속해서 연결하여 압축 할 수 있다. 
 
 ```javascript
     const fs = require('fs');

@@ -20,7 +20,7 @@ __node는 싱글스레드!!!!__
 __node 내장 메서드를 사용하여 에러가 발생해도 try catch가 자동으로 관리한다.__
 ```javascript
     setInterval( () => {
-        false.unlink('./asdadf.js', (err) => {
+        fs.unlink('./asdadf.js', (err) => {
             if(err) {
                 console.log('시작');
                 console.log(err);

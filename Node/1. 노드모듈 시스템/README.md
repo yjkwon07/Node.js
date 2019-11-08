@@ -24,19 +24,25 @@ __var.js__
     const even = '짝수입니다.';
 
     // 모듈화 
-    // module.exports = {
-    //     odd : odd,
-    //     even : even,
-    // };
+    /*
+        module.exports = {
+            odd : odd,
+            even : even,
+        };
+    */
 
     // ES2015 
-    // module.exports = {
-    //     odd,
-    //     even,
-    // };
+    /*
+        module.exports = {
+            odd,
+            even,
+        };
+    */
 
     // module.exports === exports(객체) 
-    // exports는 객체 속성만 담을 수 있다.(함수도 값)
+    // module.exports와 exports는 참조관계이기 때문이다.
+    // 단, exports는 객체 속성만 담을 수 있다.(함수도 값)
+    // 즉, 객체 리털럴은 exports.~ 으로 바꿀 수 없다. 
     exports.odd = odd;
     exports.even = even;
 ```
@@ -63,7 +69,6 @@ __fun.js__
         return even;
     }
 
-    // 객체 리털럴 이기 때문에  exports.~ 으로 바꿀 수 없다. 
     module.exports = checkOddEven;
 ```
 

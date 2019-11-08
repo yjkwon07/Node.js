@@ -1,8 +1,9 @@
 # res
 
-html을 만들어서 통채로 보내버리자... (안 그럼...협업하기 너무 힘들잖아..)
+html 파일을 만들어서 통채로 보내버리자
 
-data is buffer what??!! why don't use the toString()?? -> 브라우저에서 알아서 처리해준다.
+data is buffer what??!! why don't use the toString fuction?? -> 브라우저에서 알아서 처리해준다.
+
 ```javascript
     const http = require('http');
     const fs = require('fs');
@@ -18,7 +19,7 @@ data is buffer what??!! why don't use the toString()?? -> 브라우저에서 알
     });
 ```
 
-##노드는 에러에 취약하다... 
+## 노드는 에러에 취약하다... 
 
 에러 체크 
 ```javascript
