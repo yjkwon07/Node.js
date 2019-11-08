@@ -1,18 +1,3 @@
-function getUser() { // 로딩 시 사용자 가져오는 함수
-    var xhr = new XMLHttpRequest();
-    xhr.onload = function () {
-        if (xhr.status === 200) {
-            var users = JSON.parse(xhr.responseText);
-            box(users); 
-        } else {
-            console.error(xhr.responseText);
-        }
-    };
-    xhr.open('GET', '/users');
-    xhr.send();
-}
-window.onload = getUser(); // 로딩 시 getUser 호출...
-
 // 폼 제출
 document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault(); // form 기본제출을 막아둔다.
@@ -38,6 +23,20 @@ document.getElementById('form').addEventListener('submit', function (event) {
     xhr.send(JSON.stringify({ name: name }));
     event.target.username.value = '';
 });
+
+function getUser() { // 로딩 시 사용자 가져오는 함수
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            var users = JSON.parse(xhr.responseText);
+            box(users); 
+        } else {
+            console.error(xhr.responseText);
+        }
+    };
+    xhr.open('GET', '/users');
+    xhr.send();
+}
 
 function box(users) {
     // Object.keys() 메서드는 개체 고유 속성의 이름을 배열로 반환합니다. 배열 순서는 일반 반복문을 사용할 때와 같습니다.
@@ -97,3 +96,5 @@ function removeBox(remove, key) {
         xhr.send();
     });
 }
+
+window.onload = getUser(); // 로딩 시 getUser 호출...
