@@ -4,8 +4,9 @@
 
 ## morgan('dev')
     요청을 무었을 했는지, 응답을 무었을 했는지 
+    res.send() 후에 일어난다. 즉, 요청이 끝났을 때 로그가 찍힌다.
 
-## body-parser => express 내장이 되었음
+## body-parser => express 내장(built-in)이 되었음
     req.on('data') / req.on('end')
      -> data를 bodyParser가 해석 
     bodyParser.json()
@@ -16,7 +17,8 @@
     static 미들웨어는 정적파일용 라우터 역할을 한다.
     원래는 next를 안 한다.
     하지만, 파일을(css, html....) 못 찾으면 next를  한다.
-    그래서 최대한 위로 올린다 
+    그래서 최대한 위로 올린다.
+    즉, 파일을 찾으면 그 자리에서 라우팅을 멈춘다.
     morgan 다음으로 두는 편이다.
 
 ## cookie-parser
@@ -27,6 +29,7 @@
 
 ## express-session
     cookie-parser나 session은 이제 독립적으로 이루어졌지만 미들웨어 순서가 중요하다.
+    
 ### session
     메모리 세션을 활성화 
     옵션도 넣을 수 있다 

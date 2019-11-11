@@ -13,20 +13,20 @@ __`express에 잠깐` 저장__
 ```
 
 ## req.app.get() -> why use it that `req`?
-__다른 라우터에서 사용하기위해__
+__다른 라우터에서 사용 하기 위해__
 
-req.app.get() -> app이라는 변수가 다른 모듈에는 app이라는 변수를 선언하지 않았기 때문에 app.get()을 사용할 수 없다. 
+req.app.get() -> app이라는 변수(app.js)가 다른 모듈(라우터 파일)에는 app이라는 변수를 선언하지 않았기 때문에 app.get()을 사용할 수 없다. 
 
 그래서 req가 express의 app변수를 사용한다.
 
 __하지만 모든 요청에 다 적용이 되기 때문에 (공유 변수라) 다소 보안에 취약하다.__
 
 ```javascript
-  app.set('hello' , 'yjkwon') // 변수 설정 시 
+  app.set('hello' , 'yjkwon07') // 변수 설정 시 
   app.get('hello') // 모든 미들웨어에서 사용이 가능하다.
 ```
 
-__So How to do? 특정한 요청에서만 응답이 가기전까지만 남아 있고 싶다면__
+__So How to do? 특정한 요청(객체)에서만 응답이 가기전까지만 남아 있고 싶다면__
 
 req.password = ''; // 속성추가 
 
@@ -38,7 +38,7 @@ __미들웨어 확장__
 ```javascript
   app.use(express.json());
 ```
-__AFTER__
+__after__
 ```javascript
   app.use((req, res, next) => {
       req.password = 'yjkwon07';
