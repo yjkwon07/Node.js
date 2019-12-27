@@ -74,11 +74,13 @@
     INTEGER, FLOAT, TEXT, DATE, BOOLEAN
 
 ### table setting
+[참고](https://medium.com/wasd/node-js%EC%97%90%EC%84%9C-mysql-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-1-b4b69ce7433f)
 
 **timestamps: false**
 
     생성일을 자동으로 기록할것인지?
     생성일은 직접 받기때문에 timestamps로 시퀄라이즈에서 전달 받지 않기 위해
+    imestamps를 true로 주게 되면 createdAt과 updatedAt 컬럼을 추가합니다.
 
 **underscored: true**
         
