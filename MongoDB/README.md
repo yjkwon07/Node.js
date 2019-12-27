@@ -216,6 +216,8 @@ update({조건} , {수정할 속성})
 ```
 
 ## populate
+[참고](https://www.zerocho.com/category/MongoDB/post/59a66f8372262500184b5363)
+
 schema정의 부분 참고
 
 ```javascript
