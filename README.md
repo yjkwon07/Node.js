@@ -38,6 +38,7 @@
 - [라우터 리팩토링](https://github.com/yjkwon07/Node.js/tree/master/http%EB%AA%A8%EB%93%88%EB%A1%9C%20%EC%9B%B9%EC%84%9C%EB%B2%84%20%EB%A7%8C%EB%93%A4%EA%B8%B0/9.%20%EB%9D%BC%EC%9A%B0%ED%84%B0%20%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81)
 - [http, http2](https://github.com/yjkwon07/Node.js/tree/master/http%EB%AA%A8%EB%93%88%EB%A1%9C%20%EC%9B%B9%EC%84%9C%EB%B2%84%20%EB%A7%8C%EB%93%A4%EA%B8%B0/10.%20http%2C%20http2)
 - [cluster로 멀티 프로세싱 하기](https://github.com/yjkwon07/Node.js/tree/master/http%EB%AA%A8%EB%93%88%EB%A1%9C%20%EC%9B%B9%EC%84%9C%EB%B2%84%20%EB%A7%8C%EB%93%A4%EA%B8%B0/11.%20cluster%EB%A1%9C%20%EB%A9%80%ED%8B%B0%20%ED%94%84%EB%A1%9C%EC%84%B8%EC%8B%B1%20%ED%95%98%EA%B8%B0)
+- [http 모듈을 사용한 CRUD](https://github.com/yjkwon07/node_http_module)
 
 **[위로](https://github.com/yjkwon07/Node.js#nodejs)**
 
