@@ -6,6 +6,8 @@
 
 `요청(req)` -> `미들웨어들(app.use)` -> `next()`
 
+[라우트 요청 참고](https://luckyyowu.tistory.com/346)
+
 __request가 영향을 app.use에 영향을 받는다.__
 
 app.use 안의 req, res로 요청과 응답을 조작할 수 있다.
