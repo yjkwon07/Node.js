@@ -51,3 +51,6 @@ app.use나 router.use가 공통 미들웨어를 장착하는 함수입니다.
 res.send 후에 next()를 하면 다음 미들웨어에서 또 res.send를 하게 됩니다. 
 
 next를 할 거면 next만 하고, res.send를 할 거면 더는 next를 호출해서는 안 됩니다.
+
+## Express?
+[Express 처리 흐름](https://stylishc.tistory.com/120)
