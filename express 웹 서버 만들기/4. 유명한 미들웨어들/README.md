@@ -2,13 +2,13 @@
  
 남들이 만든 미들웨어를 쓸 수 있고 express내에서 내장된 미들웨어들을 쓸 수 있다.
 
-[참고](https://sjh836.tistory.com/154)
-
 ## morgan('dev')
     요청을 무었을 했는지, 응답을 무었을 했는지 
     res.send() 후에 일어난다. 즉, 요청이 끝났을 때 로그가 찍힌다.
 
 ## body-parser => express 내장(built-in)이 되었음
+[참고](https://sjh836.tistory.com/154)
+
     req.on('data') / req.on('end')
      -> data를 bodyParser가 해석 
     bodyParser.json()
