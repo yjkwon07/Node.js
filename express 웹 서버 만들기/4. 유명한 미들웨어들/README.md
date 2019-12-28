@@ -7,14 +7,15 @@
     res.send() 후에 일어난다. 즉, 요청이 끝났을 때 로그가 찍힌다.
 
 ## body-parser => express 내장(built-in)이 되었음
-[참고](https://sjh836.tistory.com/154)
-
+- [bodyParser](https://backback.tistory.com/336)
+- [urlencoded](https://sjh836.tistory.com/154)
+```
     req.on('data') / req.on('end')
      -> data를 bodyParser가 해석 
     bodyParser.json()
     bodyParser.urlencoded() 
     하지만 express가 body-parser 기능이 내장됨 (bodyParser 필요 없어짐)
-  
+```  
 ## express.static
     static 미들웨어는 정적파일용 라우터 역할을 한다.
     원래는 next를 안 한다.
