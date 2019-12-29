@@ -45,3 +45,13 @@
 
 ### flash()
     로그인 실패시 -> 일회성 메시지를 표시
+
+## http-errors
+catch 404 and forward to error handler
+
+```js
+ var createError = require('http-errors');
+ app.use(function(req, res, next) {
+   next(createError(404));
+ });
+```
