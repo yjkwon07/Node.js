@@ -35,6 +35,7 @@ req.password; // 임시저장 변수
 ## 미들웨어 확장 
 미들웨어 안에 미들웨어를 추가한다면 (req,res,next)를 추가하여 사용한다.
 장점: 현재 미들웨어안에 다른 기능을 추가하면서 req, res, next 객체를 수정 및 확장이 가능하다.
+
 __express.json__
 
 ```javascript
