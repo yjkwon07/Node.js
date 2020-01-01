@@ -26,14 +26,16 @@ __하지만 모든 요청에 다 적용이 되기 때문에 (공유 변수라) �
   app.get('hello') // 모든 미들웨어에서 사용이 가능하다.
 ```
 
-__So How to do? 특정한 요청(객체)에서만 응답이 가기전까지만 남아 있고 싶다면__
+__So How to do? 전체가 공유하지 않고 특정한 요청(객체)에서만 응답이 가기전까지만 남아 있고 싶다면__
 
 req.password = ''; // 속성추가 
 
 req.password; // 임시저장 변수
 
-## express.json
-__미들웨어 확장__
+## 미들웨어 확장 
+미들웨어 안에 미들웨어를 추가한다면 (req,res,next)를 추가하여 사용한다.
+장점: 현재 미들웨어안에 다른 기능을 추가하면서 req, res, next 객체를 수정 및 확장이 가능하다.
+__express.json__
 
 ```javascript
   app.use(express.json());
